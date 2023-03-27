@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patrician College Time Table Maker</title>
+    <style>
+    </style>
+</head>
+<body>
+    <div class="tablepad">
+        <table border="10">
+            <caption>Time Table</caption>
+            <tr>
+              <th>Day Order/HR</th>
+              <th>I</th>
+              <th>II</th>
+              <th>III</th>
+              <th>IV</th>
+              <th>V</th>
+            </tr>
+            <tr>
+              <td>I</td>
+            <td><div class="tablesubject">Maria Anders</div></td>
+            <td><div class="tablesubject">Maria Anders</div></td>
+            <td><div class="tablesubject">Maria Anders</div></td>
+            <td><div class="tablesubject">Maria Anders</div></td>
+            <td><div class="tablesubject">Maria Anders</div></td>
+            </tr>
+            <tr>
+              <td>II</td>
+              <td><div class="tablesubject1">Maria Anders</div></td>
+              <td><div class="tablesubject1">Maria Anders</div></td>
+              <td><div class="tablesubject1">Maria Anders</div></td>
+              <td><div class="tablesubject1">Maria Anders</div></td>
+              <td><div class="tablesubject1">Maria Anders</div></td>
+            </tr>
+            <tr>
+                <td>III</td>
+                <td><div class="tablesubject2">Maria Anders</div></td></div>
+                <td><div class="tablesubject2">Maria Anders</div></td></div>
+                <td><div class="tablesubject2">Maria Anders</div></td></div>
+                <td><div class="tablesubject2">Maria Anders</div></td></div>
+                <td><div class="tablesubject2">Maria Anders</div></td></div>
+              </tr>
+              <tr>
+                <td>IV</td>
+                <td><div class="tablesubject3">Maria Anders</div></td></div>
+                <td><div class="tablesubject3">Maria Anders</div></td></div>
+                <td><div class="tablesubject3">Maria Anders</div></td></div>
+                <td><div class="tablesubject3">Maria Anders</div></td></div>
+                <td><div class="tablesubject3">Maria Anders</div></td></div>
+              </tr>
+              <tr>
+                <td>V</td>
+                <td><div class="tablesubject4">Maria Anders</div></td></div>
+                <td><div class="tablesubject4">Maria Anders</div></td></div>
+                <td><div class="tablesubject4">Maria Anders</div></td></div>
+                <td><div class="tablesubject4">Maria Anders</div></td></div>
+                <td><div class="tablesubject4">Maria Anders</div></td></div>
+              </tr>
+          </table>
+    </div>
+    
+</body>
+<script>
+var subject1=prompt("Enter the subject1");
+var subject2=prompt("Enter the subject2");
+var subject3=prompt("Enter the subject3");
+var subject4=prompt("Enter the subject4");
+var subject5=prompt("Enter the subject5");
+
+var subjects=[subject1,subject2,subject3,subject4,subject5];
+var subjectssec2=[subject1,subject2,subject3,subject4,subject5];
+// alert(subjects);
+
+
+//For first day order 
+var subjectsp=subjects.length;
+var finalsubject=Math.floor(Math.random()*subjectsp);
+var selectsub1=subjects[finalsubject];
+
+var finalsubject1=Math.floor(Math.random()*subjectsp);
+var selectsub2=subjects[finalsubject1];
+
+var finalsubject2=Math.floor(Math.random()*subjectsp);
+var selectsub3=subjects[finalsubject2];
+
+var finalsubject3=Math.floor(Math.random()*subjectsp);
+var selectsub4=subjects[finalsubject3];
+
+var finalsubject4=Math.floor(Math.random()*subjectsp);
+var selectsub5=subjects[finalsubject4];
+
+const collection = document.getElementsByClassName("tablesubject");
+collection[0].innerHTML = selectsub1;
+collection[1].innerHTML = selectsub2;
+collection[2].innerHTML = selectsub3;
+collection[3].innerHTML = selectsub4;
+collection[4].innerHTML = selectsub5;
+
+// for second day order
+var subjectsp1=subjects.length;
+var finalsubjectsec1=Math.floor(Math.random()*subjectsp1);
+var selectsubsec1=subjects[finalsubjectsec1];
+
+var finalsubjectsec2=Math.floor(Math.random()*subjectsp1);
+var selectsubsec2=subjects[finalsubjectsec2];
+
+var finalsubjectsec3=Math.floor(Math.random()*subjectsp1);
+var selectsubsec3=subjects[finalsubjectsec3];
+
+var finalsubjectsec4=Math.floor(Math.random()*subjectsp1);
+var selectsubsec4=subjects[finalsubjectsec4];
+
+var finalsubjectsec5=Math.floor(Math.random()*subjectsp1);
+var selectsubsec5=subjects[finalsubjectsec5];
+
+const collection1 = document.getElementsByClassName("tablesubject1");
+collection1[0].innerHTML = selectsubsec1;
+collection1[1].innerHTML = selectsubsec2;
+collection1[2].innerHTML = selectsubsec3;
+collection1[3].innerHTML = selectsubsec4;
+collection1[4].innerHTML = selectsubsec5;
+
+// // for three day order
+var subjectsp2=subjects.length;
+var finalsubjectsec11=Math.floor(Math.random()*subjectsp2);
+var selectsubsec11=subjects[finalsubjectsec11];
+
+var finalsubjectsec22=Math.floor(Math.random()*subjectsp2);
+var selectsubsec22=subjects[finalsubjectsec22];
+
+var finalsubjectsec33=Math.floor(Math.random()*subjectsp2);
+var selectsubsec33=subjects[finalsubjectsec33];
+
+var finalsubjectsec44=Math.floor(Math.random()*subjectsp2);
+var selectsubsec44=subjects[finalsubjectsec44];
+
+var finalsubjectsec55=Math.floor(Math.random()*subjectsp2);
+var selectsubsec55=subjects[finalsubjectsec55];
+
+
+const collection2 = document.getElementsByClassName("tablesubject2");
+collection2[0].innerHTML = selectsubsec11;
+collection2[1].innerHTML = selectsubsec22;
+collection2[2].innerHTML = selectsubsec33;
+collection2[3].innerHTML = selectsubsec44;
+collection2[4].innerHTML = selectsubsec55;
+
+// // for fourth day order
+var subjectsp3=subjects.length;
+var finalsubjectsec111=Math.floor(Math.random()*subjectsp3);
+var selectsubsec111=subjects[finalsubjectsec111];
+
+var finalsubjectsec222=Math.floor(Math.random()*subjectsp3);
+var selectsubsec222=subjects[finalsubjectsec222];
+
+var finalsubjectsec333=Math.floor(Math.random()*subjectsp3);
+var selectsubsec333=subjects[finalsubjectsec333];
+
+var finalsubjectsec444=Math.floor(Math.random()*subjectsp3);
+var selectsubsec444=subjects[finalsubjectsec444];
+
+var finalsubjectsec555=Math.floor(Math.random()*subjectsp3);
+var selectsubsec555=subjects[finalsubjectsec555];
+
+
+const collection3 = document.getElementsByClassName("tablesubject3");
+collection3[0].innerHTML = selectsubsec111;
+collection3[1].innerHTML = selectsubsec222;
+collection3[2].innerHTML = selectsubsec333;
+collection3[3].innerHTML = selectsubsec444;
+collection3[4].innerHTML = selectsubsec555;
+
+// // for fifth day order
+var subjectsp4=subjects.length;
+var finalsubjectsec1111=Math.floor(Math.random()*subjectsp4);
+var selectsubsec1111=subjects[finalsubjectsec1111];
+
+var finalsubjectsec2222=Math.floor(Math.random()*subjectsp4);
+var selectsubsec2222=subjects[finalsubjectsec2222];
+
+var finalsubjectsec3333=Math.floor(Math.random()*subjectsp4);
+var selectsubsec3333=subjects[finalsubjectsec3333];
+
+var finalsubjectsec4444=Math.floor(Math.random()*subjectsp4);
+var selectsubsec4444=subjects[finalsubjectsec4444];
+
+var finalsubjectsec5555=Math.floor(Math.random()*subjectsp4);
+var selectsubsec5555=subjects[finalsubjectsec5555];
+
+
+const collection4 = document.getElementsByClassName("tablesubject4");
+collection4[0].innerHTML = selectsubsec1111;
+collection4[1].innerHTML = selectsubsec2222;
+collection4[2].innerHTML = selectsubsec3333;
+collection4[3].innerHTML = selectsubsec4444;
+collection4[4].innerHTML = selectsubsec5555;
+
+</script>
+</html>
